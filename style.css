@@ -26,7 +26,6 @@ a:hover {
 /* ---------------------------------------------------- */
 
 ul {
-
     list-style-type: none;
 }
 
@@ -34,7 +33,7 @@ ul {
 	display: flex;
 	flex-direction: row;
 	justify-content: end;
-	align-items: flex-end;
+	align-items: stretch;
 	font-size: 14px;
 }
 
@@ -43,11 +42,23 @@ ul {
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
+	height: 52px;
 }
 
 .logo {
 	text-transform: uppercase;
-	padding-left: 5vw;
+	padding: 10px 20px 10px 20px;
 	font-weight: 500;
 	font-size: 30px;
+	flex-shrink: 2;
 }
+
+a {
+	height: 52px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+/*Položky v navigaci jsou vedle sebe, mají margin 1px, žadný padding
+Odkazy v seznamu zabírají celou výšku rodiče a jsou vertikálně vycentrované*/
